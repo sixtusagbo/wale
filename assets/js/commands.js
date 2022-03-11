@@ -9,7 +9,6 @@ var Wale = (function ($) {
       body: formData,
       headers: {
         'X-Requested-With': 'XMLHttpRequest',
-        'Content-Type': 'application/json'
       },
     }).then(data => {
       if (data.status == 200) {
@@ -1067,6 +1066,20 @@ var Wale = (function ($) {
             );
             break;
         };
+      } else if (data.status == 400) {
+        $('.loader').remove();
+        Swal.fire(
+          'Oops!',
+          'Network issues, please try again...',
+          'error'
+        );
+      } else if (data.status == 404) {
+        $('.loader').remove();
+        Swal.fire(
+          'Error!',
+          'Form filled incorrectly!',
+          'error'
+        );
       }
     });
   }
