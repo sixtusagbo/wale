@@ -1,12 +1,5 @@
 # wale
 
-[![License](https://img.shields.io/github/license/sixtusmiracle/wale)](LICENSE)
-![GitHub repo size in bytes](https://img.shields.io/github/repo-size/sixtusmiracle/wale)
-
-![Screenshot](https://raw.githubusercontent.com/sixtusmiracle/wale/main/screenshot.png)
-
-## About Wale
-
 Made with vanilla PHP
 
 ## DISCLAIMER:
