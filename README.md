@@ -13,4 +13,4 @@ Created by Sixtus Miracle.
 
 ## Donate
 
-You can support me via [PayPal](https://paypal.me/mirolicmiralo)
+You can support me via [Barter](https://barter.me/sixtusagbo)
