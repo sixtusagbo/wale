@@ -5,7 +5,7 @@ if (isset($_POST['type'])) {
     error_reporting(E_ALL);
 
     $from = 'admin@wale.com'; // Mail create from your cpanel
-    $to = "mail.mirolic@gmail.com"; // Receiver address
+    $to = "admin@example.com"; // Receiver address
 
     $subject = "Mail From Wale";
     $message = "You have received a new message from your website, " .
